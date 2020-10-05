@@ -1,0 +1,34 @@
+
+buildscript {
+    ext {
+        debugApiKey = "prtl6749387986743898559646983194"
+        debugApiVersion = "v1.0"
+        debugBaseUrl = "http://partners.api.skyscanner.net/apiservices/"
+        releaseApiKey = debugApiKey
+        releaseApiVersion = debugApiVersion
+        releaseBaseUrl = debugBaseUrl
+    }
+
+    repositories {
+        google()
+        jcenter()
+    }
+
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.4.2'
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:1.3.31"
+        classpath "android.arch.navigation:navigation-safe-args-gradle-plugin:1.0.0"
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        jcenter()
+        maven { url "https://kotlin.bintray.com/kotlinx/" }
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

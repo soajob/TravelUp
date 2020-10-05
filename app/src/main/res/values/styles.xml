@@ -1,0 +1,59 @@
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+    </style>
+
+    <style name="Autocomplete" parent="InputFieldStyle">
+        <item name="colorControlActivated">@color/colorAccent</item>
+        <item name="colorControlNormal">@color/colorPrimary</item>
+    </style>
+
+    <style name="ButtonStyle">
+        <item name="android:background">@drawable/button_state_selector</item>
+        <item name="android:layout_marginTop">@dimen/indent_32dp</item>
+        <item name="android:padding">@dimen/indent_8dp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">@dimen/data_text_size</item>
+    </style>
+
+    <style name="DataFieldStyle">
+        <item name="android:text">@string/label_no_data</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+        <item name="android:textSize">@dimen/data_text_size</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="InputBlockStyle">
+        <item name="android:background">@drawable/input_block_background</item>
+        <item name="android:layout_margin">@dimen/indent_16dp</item>
+        <item name="android:padding">@dimen/indent_8dp</item>
+    </style>
+
+    <style name="InputFieldStyle">
+        <item name="android:layout_marginBottom">@dimen/indent_8dp</item>
+        <item name="android:layout_marginTop">@dimen/indent_8dp</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+        <item name="android:textColorHint">@android:color/darker_gray</item>
+        <item name="android:textSize">@dimen/data_text_size</item>
+    </style>
+
+    <style name="LabelStyle">
+        <item name="android:layout_marginTop">@dimen/indent_8dp</item>
+        <item name="android:textSize">@dimen/label_text_size</item>
+    </style>
+
+    <style name="SpinnerListItemStyle" parent="android:TextAppearance.Widget.TextView.SpinnerItem">
+        <item name="android:padding">@dimen/indent_8dp</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+        <item name="android:textSize">@dimen/data_text_size</item>
+    </style>
+
+    <style name="SpinnerSelectedItemStyle" parent="android:Widget.TextView.SpinnerItem">
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+        <item name="android:textSize">@dimen/data_text_size</item>
+    </style>
+
+</resources>
